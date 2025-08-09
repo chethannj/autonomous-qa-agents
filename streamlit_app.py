@@ -14,7 +14,11 @@ st.title("🤖 Autonomous QA Test Agent")
 st.markdown("Generate, format, and export test cases from Confluence or Jira using Groq AI.")
 
 source_type = st.selectbox("Source Type", ["jira", "confluence"])
-source_id = st.text_input("Source ID (Confluence Page ID or Jira Ticket Key)", "")
+source_id = st.text_input(
+    "Source ID (Confluence Page ID or Jira Ticket Key)",
+    value="",  # default value
+    placeholder="e.g., CP-1(Login to Banking App) or CP-2(Account Summary) or CP-3(Withdrawal)"  # placeholder text
+)
 
 
 if st.button("Generate Test Cases"):
