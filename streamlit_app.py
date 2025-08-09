@@ -13,7 +13,7 @@ st.set_page_config(page_title="Autonomous QA Test Agent", layout="wide")
 st.title("🤖 Autonomous QA Test Agent")
 st.markdown("Generate, format, and export test cases from Confluence or Jira using Groq AI.")
 
-source_type = st.selectbox("Source Type", ["jira", "confluence"])
+source_type = st.selectbox("Source Type", ["jira"])
 source_id = st.text_input(
     "Source ID (JIRA Ticket Key or Confluence)",
     value="",  # default value
