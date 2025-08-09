@@ -15,7 +15,7 @@ st.markdown("Generate, format, and export test cases from Confluence or Jira usi
 
 source_type = st.selectbox("Source Type", ["jira", "confluence"])
 source_id = st.text_input(
-    "Source ID (Confluence Page ID or Jira Ticket Key)",
+    "Source ID (JIRA Ticket Key or Confluence)",
     value="",  # default value
     placeholder="e.g., CP-1(Login to Banking App) or CP-2(Account Summary) or CP-3(Withdrawal)"  # placeholder text
 )
