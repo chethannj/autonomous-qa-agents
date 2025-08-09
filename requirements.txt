@@ -1,0 +1,9 @@
+crewai
+python-dotenv
+requests
+playwright
+openai
+langchain
+streamlit
+groq
+beautifulsoup4
